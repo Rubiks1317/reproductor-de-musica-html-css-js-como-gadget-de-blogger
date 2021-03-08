@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reproductor de Musica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/reproductor.js"></script>
 </head>
 <body>
+    <div id="player">
+        <div id="border_player">
+            <div id="contain">
+                
+                <div id="song_info">
+                    <p>
+                        <span id="song_name">Get Lucky</span>
+                        <br>
+                        <span id="song_artist">Daft Punk</span>
+                    </p>
+                    <img id="artist_image" src="images/daft-punk.jpg">
+                </div>
+
+                <audio id="audio" src=""></audio>
+
+                <div id="controls">
+                    <nav>
+                        <ul>
+                            <li>
+                                <img id="backButton" src="images/back.png" width="25">
+                            </li>
+                            <li>
+                                <img id="playButton" src="images/play.png" width="25">
+                            </li>
+                            <li>
+                                <img id="nextButton" src="images/next.png" width="25">
+                            </li>
+                        </ul>
+                    </nav>
     
+                    <div>
+                        <span id="currentTime">00:00</span>
+                        <input type="range" name="" value="0" min="0" max="100" step="0.1" id="sliderTime">
+                        <span id="totalTime">00:00</span>
+                    </div>    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr style="margin: 2% 0;">
+    <div id="song_list">      
+        <ul></ul>
+    </div>
 </body>
 </html>
